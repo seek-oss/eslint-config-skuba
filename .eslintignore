@@ -9,3 +9,5 @@ node_modules*/
 /lib*/
 /tmp*/
 # end managed by skuba
+
+!.eslintrc.js
