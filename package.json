@@ -13,11 +13,11 @@
     "skuba": "3.6.0"
   },
   "files": [
-    ".eslintrc.js"
+    "index.js"
   ],
   "homepage": "https://github.com/seek-oss/eslint-config-skuba#readme",
   "license": "MIT",
-  "main": "./.eslintrc.js",
+  "main": "./index.js",
   "name": "eslint-config-skuba",
   "peerDependencies": {
     "eslint": ">= 7",
