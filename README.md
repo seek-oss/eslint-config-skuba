@@ -2,29 +2,22 @@
 
 [![Powered by skuba](https://img.shields.io/badge/🤿%20skuba-powered-009DC4)](https://github.com/seek-oss/skuba)
 
-This package is intended to be public on [seek-oss].
-To create an internal package,
-run `skuba init` and select the `private-npm-package` template.
-
-Please read [SEEK's Open Source RFC] before proceeding.
+ESLint config for [skuba](https://github.com/seek-oss/skuba).
 
 ## Table of contents
 
-- [API](#api)
+- [Usage](#usage)
 - [Development](#development)
 - [Release](#release)
 
-## API
-
-### `log`
-
-Writes "eslint-config-skuba" to stdout.
-Thrilling stuff.
+## Usage
 
 ```typescript
-import { log } from 'eslint-config-skuba';
+// .eslintrc.js
 
-log();
+module.exports = {
+  extends: ['skuba'],
+};
 ```
 
 ## Development
@@ -36,12 +29,6 @@ log();
 
 ```shell
 yarn install
-```
-
-### Test
-
-```shell
-yarn test
 ```
 
 ### Lint
@@ -57,9 +44,6 @@ yarn lint
 ### Package
 
 ```shell
-# compile source
-yarn build
-
 # review bundle
 npm pack
 ```
@@ -81,12 +65,6 @@ on:
 ```
 
 It depends on this repo being hosted on [seek-oss] with access to the `SEEK_OSS_CI_NPM_TOKEN` GitHub secret.
-
-Request access in `#open-source` on Slack:
-
-```text
-Hi, I’m publishing a new package from seek-oss/eslint-config-skuba. May I have access to the SEEK_OSS_CI_NPM_TOKEN organisation secret?
-```
 
 ### Releasing latest
 

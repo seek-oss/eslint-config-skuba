@@ -4,5 +4,6 @@
     "target": "ES2019"
   },
   "exclude": ["lib/**/*"],
-  "extends": "skuba/config/tsconfig.json"
+  "extends": "skuba/config/tsconfig.json",
+  "include": [".eslintrc.js", "index.js"]
 }
