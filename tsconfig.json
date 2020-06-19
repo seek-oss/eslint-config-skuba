@@ -5,5 +5,5 @@
   },
   "exclude": ["lib/**/*"],
   "extends": "skuba/config/tsconfig.json",
-  "include": [".eslintrc.js"]
+  "include": [".eslintrc.js", "index.js"]
 }
