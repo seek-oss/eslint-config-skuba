@@ -3,13 +3,13 @@
     "url": "https://github.com/seek-oss/eslint-config-skuba/issues"
   },
   "dependencies": {
-    "eslint-config-seek": "^7.0.1",
-    "eslint-plugin-jest": "^23.13.2",
+    "eslint-config-seek": "^7.0.2",
+    "eslint-plugin-jest": "^23.17.1",
     "eslint-plugin-tsdoc": "^0.2.5"
   },
   "description": "ESLint config for skuba",
   "devDependencies": {
-    "eslint": "^7.2.0",
+    "eslint": "^7.3.1",
     "skuba": "3.6.0"
   },
   "files": [
@@ -20,7 +20,7 @@
   "main": "./index.js",
   "name": "eslint-config-skuba",
   "peerDependencies": {
-    "eslint": ">= 7",
+    "eslint": ">= 7.2",
     "typescript": ">= 3.9"
   },
   "repository": {
