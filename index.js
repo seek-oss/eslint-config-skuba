@@ -14,7 +14,13 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.test.ts'],
+      files: ['**/*.ts', '**/*.tsx'],
+      rules: {
+        'tsdoc/syntax': 'error',
+      },
+    },
+    {
+      files: ['**/*.test.ts', '**/*.test.tsx'],
       rules: {
         // Allow `any` in tests
         '@typescript-eslint/no-unsafe-assignment': 'off',
@@ -69,8 +75,6 @@ module.exports = {
     'jest/prefer-to-have-length': 'error',
     'jest/prefer-todo': 'error',
     'jest/valid-title': 'error',
-
-    'tsdoc/syntax': 'error',
 
     'no-use-before-define': 'off',
     'sort-imports': [
