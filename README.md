@@ -4,50 +4,52 @@
 [![GitHub Validate](https://github.com/seek-oss/eslint-config-skuba/workflows/Validate/badge.svg?branch=master)](https://github.com/seek-oss/eslint-config-skuba/actions?query=workflow%3AValidate)
 [![Powered by skuba](https://img.shields.io/badge/🤿%20skuba-powered-009DC4)](https://github.com/seek-oss/skuba)
 
-ESLint config for [skuba](https://github.com/seek-oss/skuba).
+Shareable ESLint config for **[skuba]**.
+
+[skuba]: https://github.com/seek-oss/skuba
 
 ## Table of contents
 
 - [Usage](#usage)
-- [Development](#development)
 - [Release](#release)
+- [Contributing](https://github.com/seek-oss/eslint-config-skuba/blob/master/CONTRIBUTING.md)
 
 ## Usage
 
-```typescript
-// .eslintrc.js
+**eslint-config-skuba** is bundled with **skuba**.
 
+You can start a new project:
+
+```shell
+npx skuba init
+```
+
+Or bootstrap an existing one:
+
+```shell
+# install skuba
+yarn add --dev --exact skuba
+
+# bootstrap your project
+yarn skuba configure
+```
+
+Either method will leave you with an `.eslintrc.js`:
+
+```typescript
 module.exports = {
   extends: ['skuba'],
 };
 ```
 
-## Development
-
-### Prerequisites
-
-- Node.js LTS
-- Yarn 1.x
+Some scripts will be defined via `package.json`:
 
 ```shell
-yarn install
-```
-
-### Lint
-
-```shell
-# fix
+# run ESLint in fix mode
 yarn format
 
-# check
+# run ESLint in check mode
 yarn lint
-```
-
-### Package
-
-```shell
-# review bundle
-npm pack
 ```
 
 ## Release
