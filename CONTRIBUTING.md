@@ -2,7 +2,7 @@
 
 Hi there, thanks for checking out our repo!
 
-**skuba-dive** is a minimal runtime that complements **[skuba]**,
+**eslint-config-skuba** is a [shareable ESLint config] for **[skuba]**,
 our toolkit for developing TypeScript backend applications and packages at SEEK.
 While third-party contributions are certainly welcome,
 this project is primarily driven by our internal priorities and technology strategy.
@@ -26,11 +26,9 @@ so don't commit or post anything that isn't ready for the entire world to see.
 
 ## Getting started
 
-**skuba-dive** is documented through its [README](/README.md).
+**eslint-config-skuba** is documented through its [README](/README.md).
 We maintain [release notes] on GitHub,
 and distribute it as an [npm package].
-
-See the [README design section] for more details on what it tries to accomplish.
 
 ### I want to discuss or report something
 
@@ -92,7 +90,7 @@ If you don't have push access,
 you may need to [fork the repo] and push there instead:
 
 ```shell
-git remote add fork git@github.com:your-username/skuba-dive.git
+git remote add fork git@github.com:your-username/eslint-config-skuba.git
 git push --set-upstream fork your-branch-name
 ```
 
@@ -101,40 +99,47 @@ If all is well, they will merge your pull request into master.
 
 ### Testing
 
-You may find it easier to develop alongside unit tests:
+The easiest way to test your changes is to try them out on an actual project.
+Find or create a repo using **skuba**,
+then specify your changes as extensions to the stable **eslint-config-skuba** release:
 
-```shell
-yarn test --watch
+```javascript
+module.exports = {
+  extends: ['skuba'],
+
+  // your changes here
+  overrides: {},
+  rules: {},
+};
 ```
 
+You can then copy those changes back into [index.js](/index.js).
 Format your code once you're happy with it:
 
 ```shell
 yarn format
 ```
 
-We run linting and testing in CI,
-but consider running these commands locally for a faster feedback loop:
+We run linting in CI,
+but consider running this command locally for a faster feedback loop:
 
 ```shell
 yarn lint
-yarn test
 ```
 
 ## Releases
 
 ### Writing a semantic commit message
 
-Consider whether you are making a visible change to the public **skuba-dive** interface,
+Consider whether you are making a visible change to the public **eslint-config-skuba** interface,
 which includes:
 
-- Top-level exports from [src/index.ts](/src/index.ts)
+- Top-level exports from [index.js](/index.js)
 - [npm dependencies](/package.json)
 
 A release is not necessary for:
 
 - Documentation like the [README](/README.md)
-- Internal refactoring that preserves the existing interface
 - [npm dev dependencies](/package.json)
 
 We use **[semantic-release]** to manage package releases.
@@ -169,12 +174,12 @@ Commits should follow the [Conventional Commits] spec for [semantic versioning]:
   Note that the `fix` type could be anything;
   the `BREAKING CHANGE:` prefix in the commit body is what determines the release as major.
 
-Specifying a scope makes it easy to eyeball which part of **skuba-dive** a change relates to:
+Specifying a scope makes it easy to eyeball which part of **eslint-config-skuba** a change relates to:
 
 ```text
 chore(docs): Update README
 
-fix(Assert): Add email address function
+fix(jest): Disable expect-expect rule
 ```
 
 ### Publishing a release
@@ -194,15 +199,15 @@ Simply push changes to the `beta` branch on GitHub.
 
 [#typescriptification]: https://seekchat.slack.com/channels/typescriptification
 [conventional commits]: https://www.conventionalcommits.org/en/v1.0.0-beta.2/
-[create a pull request]: https://github.com/seek-oss/skuba-dive/compare
+[create a pull request]: https://github.com/seek-oss/eslint-config-skuba/compare
 [dist-tag]: https://docs.npmjs.com/cli/dist-tag
-[fork the repo]: https://github.com/seek-oss/skuba-dive/fork
-[npm package]: https://www.npmjs.com/package/skuba-dive
-[readme design section]: https://github.com/seek-oss/skuba-dive#design
-[release notes]: https://github.com/seek-oss/skuba-dive/releases
+[fork the repo]: https://github.com/seek-oss/eslint-config-skuba/fork
+[npm package]: https://www.npmjs.com/package/eslint-config-skuba
+[release notes]: https://github.com/seek-oss/eslint-config-skuba/releases
 [semantic versioning]: https://semver.org/
 [semantic-release]: https://github.com/semantic-release/semantic-release
 [skuba]: https://github.com/seek-oss/skuba
+[shareable eslint config]: https://eslint.org/docs/developer-guide/shareable-configs
 [squash our commits]: https://github.blog/2016-04-01-squash-your-commits/
-[submit an issue]: https://github.com/seek-oss/skuba-dive/issues/new/choose
+[submit an issue]: https://github.com/seek-oss/eslint-config-skuba/issues/new/choose
 [windows subsystem for linux]: https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux
