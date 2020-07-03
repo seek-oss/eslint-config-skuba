@@ -3,27 +3,30 @@
     "url": "https://github.com/seek-oss/eslint-config-skuba/issues"
   },
   "dependencies": {
+    "@types/eslint": "^7.2.0",
     "eslint-config-seek": "^7.0.2",
     "eslint-plugin-jest": "^23.17.1",
     "eslint-plugin-tsdoc": "^0.2.5"
   },
   "description": "ESLint config for skuba",
   "devDependencies": {
-    "@types/eslint": "^7.2.0",
     "eslint": "^7.3.1",
-    "skuba": "3.6.0"
+    "skuba": "3.7.3"
   },
   "files": [
+    "index.d.ts",
     "index.js"
   ],
   "homepage": "https://github.com/seek-oss/eslint-config-skuba#readme",
   "license": "MIT",
   "main": "./index.js",
+  "module": "./index.js",
   "name": "eslint-config-skuba",
   "peerDependencies": {
     "eslint": ">= 7.2",
     "typescript": ">= 3.9"
   },
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/seek-oss/eslint-config-skuba.git"
@@ -36,11 +39,11 @@
   },
   "sideEffects": false,
   "skuba": {
-    "entryPoint": null,
+    "entryPoint": "index.js",
     "template": "oss-npm-package",
     "type": "package",
-    "version": "3.6.0"
+    "version": "3.7.3"
   },
-  "types": "./lib-types/index.d.ts",
+  "types": "./index.d.ts",
   "version": "0.0.0-semantically-released"
 }
