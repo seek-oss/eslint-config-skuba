@@ -3330,15 +3330,15 @@ eslint-config-seek@^7.0.2:
     eslint-plugin-react-hooks "^4.0.4"
     find-root "^1.1.0"
 
-eslint-config-skuba@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-skuba/-/eslint-config-skuba-1.0.3.tgz#2d61f270f82dcaa05d30bd09f5c1f74f35cd7727"
-  integrity sha512-qYgaPU0y6JHUE1UddJAwOdPiYORv/dhZKqIXJ/zYcy9ApSoSLrO0gxmsTJi0RO86kEXKSx1J2LkKftS9cQawCw==
+eslint-config-skuba@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-skuba/-/eslint-config-skuba-1.0.4.tgz#c80f839339b09960c09136a36bb71c0bb74513c1"
+  integrity sha512-AgpqF4MFxaffJ7J+6gDujedRQ8wCGWtTsbVdaDIxHuiAz4na+0zA7vVSXwcR5/dEknEJi7UBZq7g/Qfq47lYJg==
   dependencies:
     "@types/eslint" "^7.2.0"
     eslint-config-seek "^7.0.2"
-    eslint-plugin-jest "^23.17.1"
-    eslint-plugin-tsdoc "^0.2.5"
+    eslint-plugin-jest "^23.18.0"
+    eslint-plugin-tsdoc "^0.2.6"
 
 eslint-import-resolver-node@^0.3.3:
   version "0.3.4"
@@ -3398,7 +3398,7 @@ eslint-plugin-import@^2.21.2:
     resolve "^1.17.0"
     tsconfig-paths "^3.9.0"
 
-eslint-plugin-jest@^23.13.2, eslint-plugin-jest@^23.17.1, eslint-plugin-jest@^23.18.0:
+eslint-plugin-jest@^23.13.2, eslint-plugin-jest@^23.18.0:
   version "23.18.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.18.0.tgz#4813eacb181820ed13c5505f400956d176b25af8"
   integrity sha512-wLPM/Rm1SGhxrFQ2TKM/BYsYPhn7ch6ZEK92S2o/vGkAAnDXM0I4nTIo745RIX+VlCRMFgBuJEax6XfTHMdeKg==
@@ -3427,7 +3427,7 @@ eslint-plugin-react@^7.20.0:
     string.prototype.matchall "^4.0.2"
     xregexp "^4.3.0"
 
-eslint-plugin-tsdoc@^0.2.5, eslint-plugin-tsdoc@^0.2.6:
+eslint-plugin-tsdoc@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/eslint-plugin-tsdoc/-/eslint-plugin-tsdoc-0.2.6.tgz#8e63aeff24708da5a01ac2bef1e46c4cd779ce09"
   integrity sha512-pU6/VVEOlC85BrUjsqZGGSRy41N+PHfWXokqjpQRWT1LSpBsAEbRpsueNYSFS+93Sx9CFD0511kjLKVySRbLbg==
@@ -7955,10 +7955,10 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-runtypes@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
-  integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
+runtypes@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-5.0.1.tgz#406d140410266f6ece17c3501a37234f91faa346"
+  integrity sha512-+TWVlCmFsgrG4Nd2u+ambpNFO8Yp4heAflGQi9oNj6GRkxZo8aSDBxO1Y0vlKIQCWKKFxato+8Hn67XeAqKhRA==
 
 rxjs@^6.5.2:
   version "6.5.5"
@@ -8162,10 +8162,10 @@ sisteransi@^1.0.4:
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
 
-skuba@3.7.5:
-  version "3.7.5"
-  resolved "https://registry.yarnpkg.com/skuba/-/skuba-3.7.5.tgz#1bbe37d67f9a2a8aac332fcd4796c6a8370bd1f9"
-  integrity sha512-3cwCCIaat1zPvkJpZcoxuqcluul8KjHOaKctve2h1SZrXPIdxRR4x9k62ZkPKWpRowvbG/hnbTWV4typCt+y1A==
+skuba@3.7.6:
+  version "3.7.6"
+  resolved "https://registry.yarnpkg.com/skuba/-/skuba-3.7.6.tgz#88c1fa73a79d2f3fc75f3007fefc7d294af0617f"
+  integrity sha512-yCr0+0DGLjlYX6OYYPtZtHO50C0nYI3gHOZb6U9M8ovd2QfS0zaZ3UqLeKRro/OC6t1KJK/AR7S3w9foc4jlBg==
   dependencies:
     "@babel/cli" "^7.10.3"
     "@babel/core" "^7.10.3"
@@ -8180,7 +8180,7 @@ skuba@3.7.5:
     ejs "^3.1.3"
     enquirer "^2.3.5"
     eslint "^7.3.1"
-    eslint-config-skuba "1.0.3"
+    eslint-config-skuba "1.0.4"
     execa "^4.0.2"
     fs-extra "^9.0.1"
     get-port "^5.1.1"
@@ -8194,13 +8194,13 @@ skuba@3.7.5:
     npm-which "^3.0.1"
     prettier "2.0.5"
     read-pkg-up "^7.0.1"
-    runtypes "^4.2.0"
+    runtypes "^5.0.0"
     semantic-release "^17.0.8"
     ts-jest "^26.1.0"
     ts-node "^8.10.2"
     ts-node-dev "^1.0.0-pre.44"
     tsconfig-seek "1.0.2"
-    typescript "3.9.6"
+    typescript "3.9.7"
 
 slash@^2.0.0:
   version "2.0.0"
@@ -9057,10 +9057,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.9.6:
-  version "3.9.6"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.6.tgz#8f3e0198a34c3ae17091b35571d3afd31999365a"
-  integrity sha512-Pspx3oKAPJtjNwE92YS05HQoY7z2SFyOpHo9MqJor3BXAGNaPUs83CuVp9VISFkSjyRfiTpmKuAYGJB7S7hOxw==
+typescript@3.9.7:
+  version "3.9.7"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
+  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
 
 uglify-js@^3.1.4:
   version "3.9.4"
