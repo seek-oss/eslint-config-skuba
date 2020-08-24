@@ -4,8 +4,8 @@
   },
   "dependencies": {
     "@types/eslint": "^7.2.0",
-    "eslint-config-seek": "^7.0.2",
-    "eslint-plugin-jest": "^23.18.0",
+    "eslint-config-seek": "^7.0.3",
+    "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-tsdoc": "^0.2.6"
   },
   "description": "ESLint config for skuba",
