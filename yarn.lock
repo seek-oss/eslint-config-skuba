@@ -1152,10 +1152,25 @@
     jju "~1.4.0"
     resolve "~1.12.0"
 
+"@microsoft/tsdoc-config@0.13.6":
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc-config/-/tsdoc-config-0.13.6.tgz#2154785e264edaa515ce5bb2a6c9cd7865f356cf"
+  integrity sha512-VJjV35PnrNISoX2WMemZjnCIdOUPTRpCz6pu8inISotLd3SgoDSJygGaE7+lOYdCtDl+4c8PWJdZivxxXgOnLw==
+  dependencies:
+    "@microsoft/tsdoc" "0.12.21"
+    ajv "~6.12.3"
+    jju "~1.4.0"
+    resolve "~1.12.0"
+
 "@microsoft/tsdoc@0.12.20":
   version "0.12.20"
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.20.tgz#4261285f666ee0c0378f810585dd4ec5bbfa8852"
   integrity sha512-/b13m37QZYPV6nCOiqkFyvlQjlTNvAcQpgFZ6ZKIqtStJxNdqVo/frULubxMUMWi6p9Uo5f4BRlguv5ViFcL0A==
+
+"@microsoft/tsdoc@0.12.21":
+  version "0.12.21"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.21.tgz#1098c393634826ed47386862a1241ce8b7c0cf0d"
+  integrity sha512-j+9OJ0A0buZZaUn6NxeHUVpoa05tY2PgVs7kXJhJQiKRB0G1zQqbJxer3T7jWtzpqQWP89OBDluyIeyTsMk8Sg==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
@@ -1431,10 +1446,10 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
-"@types/eslint@^7.2.0":
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.2.1.tgz#fcfbcccaecfb487b0fc5d44686807cc625f358b6"
-  integrity sha512-WjKivjZyeL65Qt8HLLGwyhC3NkhoPVgCvxPcCMb02k8fCSJH1vvDRefXmSHA4U9TcjOj024yCOxFgCPKC0gMXQ==
+"@types/eslint@^7.2.0", "@types/eslint@^7.2.2":
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.2.2.tgz#c88426b896efeb0b2732a92431ce8aa7ec0dee61"
+  integrity sha512-psWuwNXuKR2e6vMU5d2qH0Kqzrb2Zxwk+uBCF2LsyEph+Nex3lFIPMJXwxfGesdtJM2qtjKoCYsyh76K3x9wLg==
   dependencies:
     "@types/estree" "*"
     "@types/json-schema" "*"
@@ -3432,10 +3447,10 @@ eslint-config-prettier@^6.11.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-seek@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-seek/-/eslint-config-seek-7.0.3.tgz#4c1c03561e40c438b5ee69001dae84dd623b6af4"
-  integrity sha512-UM4Htc4ZhHYTy0V/aFawrUnEcmeo7GYjvEoXOIzwz15l1J+gL8rAFpLJB4mRZ21F+6C8SB5KYsN11pYnEL2iEQ==
+eslint-config-seek@^7.0.3, eslint-config-seek@^7.0.4:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-seek/-/eslint-config-seek-7.0.4.tgz#3348422b7898d75110124a42c907a11b59a3dca1"
+  integrity sha512-7cLzfFgvD++UZQFAy+DTYqR82kbh18V6ywSBkrGcrRAkJyOUy4198lU7ETuti/UoSU7Q933n+RyO6BlxIDfzbA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^3.9.1"
     "@typescript-eslint/parser" "^3.9.1"
@@ -3446,7 +3461,7 @@ eslint-config-seek@^7.0.3:
     eslint-plugin-cypress "^2.11.1"
     eslint-plugin-flowtype "^5.1.3"
     eslint-plugin-import "^2.21.2"
-    eslint-plugin-jest "^23.13.2"
+    eslint-plugin-jest "^24.0.0"
     eslint-plugin-react "^7.20.0"
     eslint-plugin-react-hooks "^4.0.4"
     find-root "^1.1.0"
@@ -3555,13 +3570,13 @@ eslint-plugin-react@^7.20.0:
     resolve "^1.17.0"
     string.prototype.matchall "^4.0.2"
 
-eslint-plugin-tsdoc@^0.2.6:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-tsdoc/-/eslint-plugin-tsdoc-0.2.6.tgz#8e63aeff24708da5a01ac2bef1e46c4cd779ce09"
-  integrity sha512-pU6/VVEOlC85BrUjsqZGGSRy41N+PHfWXokqjpQRWT1LSpBsAEbRpsueNYSFS+93Sx9CFD0511kjLKVySRbLbg==
+eslint-plugin-tsdoc@^0.2.6, eslint-plugin-tsdoc@^0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tsdoc/-/eslint-plugin-tsdoc-0.2.7.tgz#19a4203b2856cd6bae58e4a3dfe6c543de41988f"
+  integrity sha512-GAbNpwNfwnolagP6mCQT8wY4usifnAE/iuCz15L3BcEca0xAidctU61h7w40mOuNiSp78DYPUl5gwN89nJ8+8Q==
   dependencies:
-    "@microsoft/tsdoc" "0.12.20"
-    "@microsoft/tsdoc-config" "0.13.5"
+    "@microsoft/tsdoc" "0.12.21"
+    "@microsoft/tsdoc-config" "0.13.6"
 
 eslint-scope@^5.0.0, eslint-scope@^5.1.0:
   version "5.1.0"
