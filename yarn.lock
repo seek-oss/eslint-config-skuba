@@ -1142,16 +1142,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@microsoft/tsdoc-config@0.13.5":
-  version "0.13.5"
-  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc-config/-/tsdoc-config-0.13.5.tgz#2efeb27f5e4d191b8356aa4eb09e146c0813070c"
-  integrity sha512-KlnIdTRnPSsU9Coz9wzDAkT8JCLopP3ec1sgsgo7trwE6QLMKRpM4hZi2uzVX897SW49Q4f439auGBcQLnZQfA==
-  dependencies:
-    "@microsoft/tsdoc" "0.12.20"
-    ajv "~6.12.3"
-    jju "~1.4.0"
-    resolve "~1.12.0"
-
 "@microsoft/tsdoc-config@0.13.6":
   version "0.13.6"
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc-config/-/tsdoc-config-0.13.6.tgz#2154785e264edaa515ce5bb2a6c9cd7865f356cf"
@@ -1161,11 +1151,6 @@
     ajv "~6.12.3"
     jju "~1.4.0"
     resolve "~1.12.0"
-
-"@microsoft/tsdoc@0.12.20":
-  version "0.12.20"
-  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.20.tgz#4261285f666ee0c0378f810585dd4ec5bbfa8852"
-  integrity sha512-/b13m37QZYPV6nCOiqkFyvlQjlTNvAcQpgFZ6ZKIqtStJxNdqVo/frULubxMUMWi6p9Uo5f4BRlguv5ViFcL0A==
 
 "@microsoft/tsdoc@0.12.21":
   version "0.12.21"
@@ -1446,7 +1431,7 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
-"@types/eslint@^7.2.0", "@types/eslint@^7.2.2":
+"@types/eslint@^7.2.2":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-7.2.2.tgz#c88426b896efeb0b2732a92431ce8aa7ec0dee61"
   integrity sha512-psWuwNXuKR2e6vMU5d2qH0Kqzrb2Zxwk+uBCF2LsyEph+Nex3lFIPMJXwxfGesdtJM2qtjKoCYsyh76K3x9wLg==
@@ -1493,10 +1478,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@26.x", "@types/jest@^26.0.10":
-  version "26.0.10"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.10.tgz#8faf7e9756c033c39014ae76a7329efea00ea607"
-  integrity sha512-i2m0oyh8w/Lum7wWK/YOZJakYF8Mx08UaKA1CtbmFeDquVhAEdA7znacsVSf2hJ1OQ/OfVMGN90pw/AtzF8s/Q==
+"@types/jest@26.x", "@types/jest@^26.0.13":
+  version "26.0.13"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.13.tgz#5a7b9d5312f5dd521a38329c38ee9d3802a0b85e"
+  integrity sha512-sCzjKow4z9LILc6DhBvn5AkIfmQzDZkgtVVKmGwVrs5tuid38ws281D4l+7x1kP487+FlKDh5kfMZ8WSPAdmdA==
   dependencies:
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
@@ -1591,16 +1576,6 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/experimental-utils@^2.5.0":
-  version "2.34.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-2.34.0.tgz#d3524b644cdb40eebceca67f8cf3e4cc9c8f980f"
-  integrity sha512-eS6FTkq+wuMJ+sgtuNTtcqavWXqsflWcfBnlYhg/nS4aZ1leewkXGbvBhaapn1q6qf4M71bsR1tez5JTRMuqwA==
-  dependencies:
-    "@types/json-schema" "^7.0.3"
-    "@typescript-eslint/typescript-estree" "2.34.0"
-    eslint-scope "^5.0.0"
-    eslint-utils "^2.0.0"
-
 "@typescript-eslint/experimental-utils@^4.0.1":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-4.1.0.tgz#263d7225645c09a411c8735eeffd417f50f49026"
@@ -1641,19 +1616,6 @@
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-4.1.0.tgz#edbd3fec346f34e13ce7aa176b03b497a32c496a"
   integrity sha512-rkBqWsO7m01XckP9R2YHVN8mySOKKY2cophGM8K5uDK89ArCgahItQYdbg/3n8xMxzu2elss+an1TphlUpDuJw==
-
-"@typescript-eslint/typescript-estree@2.34.0":
-  version "2.34.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-2.34.0.tgz#14aeb6353b39ef0732cc7f1b8285294937cf37d5"
-  integrity sha512-OMAr+nJWKdlVM9LOqCqh3pQQPwxHAN7Du8DR6dmwCrAmxtiXQnhHJ6tBNtf+cggqfo51SG/FCwnKhXCIM7hnVg==
-  dependencies:
-    debug "^4.1.1"
-    eslint-visitor-keys "^1.1.0"
-    glob "^7.1.6"
-    is-glob "^4.0.1"
-    lodash "^4.17.15"
-    semver "^7.3.2"
-    tsutils "^3.17.1"
 
 "@typescript-eslint/typescript-estree@3.10.0":
   version "3.10.0"
@@ -3447,7 +3409,7 @@ eslint-config-prettier@^6.11.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-seek@^7.0.3, eslint-config-seek@^7.0.4:
+eslint-config-seek@^7.0.4:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/eslint-config-seek/-/eslint-config-seek-7.0.4.tgz#3348422b7898d75110124a42c907a11b59a3dca1"
   integrity sha512-7cLzfFgvD++UZQFAy+DTYqR82kbh18V6ywSBkrGcrRAkJyOUy4198lU7ETuti/UoSU7Q933n+RyO6BlxIDfzbA==
@@ -3466,15 +3428,15 @@ eslint-config-seek@^7.0.3, eslint-config-seek@^7.0.4:
     eslint-plugin-react-hooks "^4.0.4"
     find-root "^1.1.0"
 
-eslint-config-skuba@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/eslint-config-skuba/-/eslint-config-skuba-1.0.5.tgz#9dc80195b59a849d99aece4ef096538c863c10b7"
-  integrity sha512-WTLL80DNlMiolX/RREUQ4Z+iZI5AykVaMVmvmZqPgXKIoz4a4ipN7A8ksfEhHrs5WVwastRaXXHPS9lFcZvbSw==
+eslint-config-skuba@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/eslint-config-skuba/-/eslint-config-skuba-1.0.6.tgz#0a48e1503a177dc42c31c70e9fc14743c3e1c5e6"
+  integrity sha512-HBC/fKBFqBjtT1z1/jyBU+YJLnS+fCliMwFCaM6qccVWXM0SGIB0pMHsj5eDMlSOanq69LQVtnoKkPMGXhglEQ==
   dependencies:
-    "@types/eslint" "^7.2.0"
-    eslint-config-seek "^7.0.3"
-    eslint-plugin-jest "^23.20.0"
-    eslint-plugin-tsdoc "^0.2.6"
+    "@types/eslint" "^7.2.2"
+    eslint-config-seek "^7.0.4"
+    eslint-plugin-jest "^24.0.0"
+    eslint-plugin-tsdoc "^0.2.7"
 
 eslint-import-resolver-node@^0.3.3:
   version "0.3.4"
@@ -3534,13 +3496,6 @@ eslint-plugin-import@^2.21.2:
     resolve "^1.17.0"
     tsconfig-paths "^3.9.0"
 
-eslint-plugin-jest@^23.13.2, eslint-plugin-jest@^23.20.0:
-  version "23.20.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.20.0.tgz#e1d69c75f639e99d836642453c4e75ed22da4099"
-  integrity sha512-+6BGQt85OREevBDWCvhqj1yYA4+BFK4XnRZSGJionuEYmcglMZYLNNBBemwzbqUAckURaHdJSBcjHPyrtypZOw==
-  dependencies:
-    "@typescript-eslint/experimental-utils" "^2.5.0"
-
 eslint-plugin-jest@^24.0.0:
   version "24.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-24.0.0.tgz#6b1c460c529104c7d16d889e76fe708b281c4d14"
@@ -3570,7 +3525,7 @@ eslint-plugin-react@^7.20.0:
     resolve "^1.17.0"
     string.prototype.matchall "^4.0.2"
 
-eslint-plugin-tsdoc@^0.2.6, eslint-plugin-tsdoc@^0.2.7:
+eslint-plugin-tsdoc@^0.2.7:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/eslint-plugin-tsdoc/-/eslint-plugin-tsdoc-0.2.7.tgz#19a4203b2856cd6bae58e4a3dfe6c543de41988f"
   integrity sha512-GAbNpwNfwnolagP6mCQT8wY4usifnAE/iuCz15L3BcEca0xAidctU61h7w40mOuNiSp78DYPUl5gwN89nJ8+8Q==
@@ -3603,7 +3558,7 @@ eslint-visitor-keys@^2.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-2.0.0.tgz#21fdc8fbcd9c795cc0321f0563702095751511a8"
   integrity sha512-QudtT6av5WXels9WjIM7qz1XD1cWGvX4gGXvp/zBn9nXG02D0utdU3Em2m/QjTnrsk6bBjmCygl3rmj118msQQ==
 
-eslint@7.8.1, eslint@^7.7.0:
+eslint@7.8.1, eslint@^7.8.1:
   version "7.8.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.8.1.tgz#e59de3573fb6a5be8ff526c791571646d124a8fa"
   integrity sha512-/2rX2pfhyUG0y+A123d0ccXtMm7DV7sH1m3lk9nk2DZ2LReq39FXHueR9xZwshE5MdfSf0xunSaMWRqyIA6M1w==
@@ -8276,25 +8231,25 @@ sisteransi@^1.0.4:
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
 
-skuba@3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/skuba/-/skuba-3.9.0.tgz#c7f9a060da67f14e8c2a94f35a5ebb1ab9930197"
-  integrity sha512-cegyD81wBxkCW+Sjx5aMj5cyfnLSRBZkvzENPNuyzegN9ypfAsZ+GBo43IpSfEJGY7Mf1UnyYFvsdpCIuAuu7A==
+skuba@3.9.1:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/skuba/-/skuba-3.9.1.tgz#8ebfa8e7f051a4ad6e0e615e3a4eace32df94c10"
+  integrity sha512-OY5vqj9VjZNaB7XzeQDfMNlLXdWgO/8q4GC+xW+7v5tw7iNqf/srvd8WgmS3tBfUX3smMNPHTxeFI9hNpEv7og==
   dependencies:
     "@babel/cli" "^7.10.5"
     "@babel/core" "^7.11.4"
     "@babel/node" "^7.10.5"
     "@babel/preset-env" "^7.11.0"
     "@babel/preset-typescript" "^7.10.4"
-    "@types/jest" "^26.0.10"
+    "@types/jest" "^26.0.13"
     babel-plugin-macros "^2.8.0"
     babel-plugin-module-resolver "^4.0.0"
     chalk "^4.1.0"
     concurrently "^5.3.0"
     ejs "^3.1.5"
     enquirer "^2.3.6"
-    eslint "^7.7.0"
-    eslint-config-skuba "1.0.5"
+    eslint "^7.8.1"
+    eslint-config-skuba "1.0.6"
     execa "^4.0.3"
     fs-extra "^9.0.1"
     get-port "^5.1.1"
