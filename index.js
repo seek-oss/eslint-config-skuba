@@ -39,7 +39,6 @@ module.exports = {
   },
   plugins: ['eslint-plugin-tsdoc'],
   rules: {
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-floating-promises': 'error',
 
     'import/no-duplicates': 'error',
