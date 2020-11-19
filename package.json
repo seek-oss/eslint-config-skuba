@@ -11,7 +11,7 @@
   "description": "ESLint config for skuba",
   "devDependencies": {
     "eslint": "7.13.0",
-    "skuba": "3.10.1"
+    "skuba": "3.10.2"
   },
   "files": [
     "index.d.ts",
