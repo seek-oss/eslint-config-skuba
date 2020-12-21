@@ -10,7 +10,7 @@
   },
   "description": "ESLint config for skuba",
   "devDependencies": {
-    "eslint": "7.15.0",
+    "eslint": "7.16.0",
     "skuba": "3.11.0",
     "typescript": "4.1.3"
   },
