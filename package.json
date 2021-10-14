@@ -4,8 +4,8 @@
   },
   "dependencies": {
     "@types/eslint": "^7.2.12",
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "@typescript-eslint/parser": "^4.26.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "eslint-config-seek": "^7.0.8",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-tsdoc": "^0.2.14"
