@@ -6,8 +6,8 @@
     "@types/eslint": "^7.2.12",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
-    "eslint-config-seek": "^7.0.8",
-    "eslint-plugin-jest": "^24.3.6",
+    "eslint-config-seek": "^7.0.9",
+    "eslint-plugin-jest": "^25.2.2",
     "eslint-plugin-tsdoc": "^0.2.14"
   },
   "description": "ESLint config for skuba",

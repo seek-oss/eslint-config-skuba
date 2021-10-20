@@ -67,10 +67,10 @@ module.exports = {
 
     'jest/expect-expect': 'off',
     'jest/no-deprecated-functions': 'error',
+    'jest/prefer-expect-resolves': 'error',
     'jest/prefer-spy-on': 'error',
     'jest/prefer-strict-equal': 'off',
-    'jest/prefer-to-be-null': 'error',
-    'jest/prefer-to-be-undefined': 'error',
+    'jest/prefer-to-be': 'error',
     'jest/prefer-to-contain': 'error',
     'jest/prefer-to-have-length': 'error',
     'jest/prefer-todo': 'error',
