@@ -3,7 +3,7 @@
     "url": "https://github.com/seek-oss/eslint-config-skuba/issues"
   },
   "dependencies": {
-    "@types/eslint": "^7.2.12",
+    "@types/eslint": "^8.0.0",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
     "eslint-config-seek": "^7.0.9",
