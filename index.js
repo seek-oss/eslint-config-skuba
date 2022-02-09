@@ -31,6 +31,9 @@ module.exports = {
 
         // Allow e.g. expect(logger.child).toBeCalledWith
         '@typescript-eslint/unbound-method': 'off',
+
+        // Allow e.g. `/** @jest-environment jsdom */` directives
+        'tsdoc/syntax': 'off',
       },
     },
   ],
