@@ -6,7 +6,7 @@
     "@types/eslint": "^8.0.0",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
-    "eslint-config-seek": "^7.0.9",
+    "eslint-config-seek": "^8.0.0",
     "eslint-plugin-jest": "^25.2.2",
     "eslint-plugin-tsdoc": "^0.2.14"
   },
