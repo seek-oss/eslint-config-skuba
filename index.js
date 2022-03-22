@@ -9,6 +9,7 @@ module.exports = {
     {
       files: ['**/*.js', '**/*.jsx'],
       rules: {
+        '@typescript-eslint/no-unsafe-argument': 'off',
         '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
         'import/no-unresolved': 'off',
