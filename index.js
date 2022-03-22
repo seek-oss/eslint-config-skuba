@@ -22,7 +22,12 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.test.ts', '**/*.test.tsx'],
+      files: [
+        '**/*.test.ts',
+        '**/*.test.tsx',
+        '**/testing/**/*.ts',
+        '**/testing/**/*.tsx',
+      ],
       rules: {
         // Allow `any` in tests
         '@typescript-eslint/no-unsafe-argument': 'off',
