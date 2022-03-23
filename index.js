@@ -9,6 +9,7 @@ module.exports = {
     {
       files: ['**/*.js', '**/*.jsx'],
       rules: {
+        '@typescript-eslint/no-unsafe-argument': 'off',
         '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
         'import/no-unresolved': 'off',
@@ -21,9 +22,15 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.test.ts', '**/*.test.tsx'],
+      files: [
+        '**/*.test.ts',
+        '**/*.test.tsx',
+        '**/testing/**/*.ts',
+        '**/testing/**/*.tsx',
+      ],
       rules: {
         // Allow `any` in tests
+        '@typescript-eslint/no-unsafe-argument': 'off',
         '@typescript-eslint/no-unsafe-assignment': 'off',
         '@typescript-eslint/no-unsafe-call': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
