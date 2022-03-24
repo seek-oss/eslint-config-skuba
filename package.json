@@ -37,8 +37,7 @@
   "scripts": {
     "format": "skuba format",
     "lint": "skuba lint",
-    "release": "skuba release",
-    "test": "yarn lint"
+    "release": "skuba release"
   },
   "sideEffects": false,
   "skuba": {
