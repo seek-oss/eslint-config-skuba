@@ -36,8 +36,11 @@ module.exports = {
         '@typescript-eslint/no-unsafe-member-access': 'off',
         '@typescript-eslint/no-unsafe-return': 'off',
 
-        // Allow e.g. expect(logger.child).toBeCalledWith
+        // Allow e.g. `expect(logger.child).toBeCalledWith()`
         '@typescript-eslint/unbound-method': 'off',
+
+        // Allow backtick default in `expect().toMatchInlineSnapshot()`
+        quotes: 'off',
 
         // Allow e.g. `/** @jest-environment jsdom */` directives
         'tsdoc/syntax': 'off',
@@ -87,6 +90,14 @@ module.exports = {
     'jest/valid-title': 'error',
 
     'no-use-before-define': 'off',
+
+    // https://github.com/prettier/eslint-config-prettier/blob/v8.5.0/README.md#quotes
+    quotes: [
+      'warn',
+      'single',
+      { allowTemplateLiterals: false, avoidEscape: true },
+    ],
+
     'sort-imports': [
       'error',
       {
