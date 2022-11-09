@@ -53,6 +53,7 @@ module.exports = {
   plugins: ['eslint-plugin-tsdoc'],
   rules: {
     '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/consistent-type-exports': 'error',
 
     'import/no-duplicates': 'error',
     'import/order': [
