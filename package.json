@@ -4,17 +4,17 @@
   },
   "dependencies": {
     "@types/eslint": "^8.4.1",
-    "@typescript-eslint/eslint-plugin": "^5.36.0",
-    "@typescript-eslint/parser": "^5.36.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
     "eslint-config-seek": "^10.0.0",
     "eslint-plugin-jest": "^27.0.0",
     "eslint-plugin-tsdoc": "^0.2.14"
   },
   "description": "ESLint config for skuba",
   "devDependencies": {
-    "eslint": "8.17.0",
+    "eslint": "8.28.0",
     "skuba": "5.0.1",
-    "typescript": "4.8.3"
+    "typescript": "4.9.3"
   },
   "files": [
     "index.d.ts",
