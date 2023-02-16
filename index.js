@@ -1,13 +1,21 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   extends: ['seek'],
-  ignorePatterns: ['**/.eslintrc.js'],
+  ignorePatterns: [
+    '**/.eslintrc.js',
+
+    // Gantry resource files support non-standard syntax (Go templating)
+    '/.gantry/**/*.yaml',
+    '/.gantry/**/*.yml',
+    'gantry*.yaml',
+    'gantry*.yml',
+  ],
   overrides: [
     {
       extends: [
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
-      files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
       parserOptions: {
         project: './tsconfig.json',
       },
@@ -17,7 +25,7 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.js', '**/*.jsx'],
+      files: ['*.js', '*.jsx'],
       rules: {
         '@typescript-eslint/no-unsafe-argument': 'off',
         '@typescript-eslint/no-unsafe-assignment': 'off',
@@ -26,7 +34,7 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.ts', '**/*.tsx'],
+      files: ['*.ts', '*.tsx'],
       plugins: ['eslint-plugin-tsdoc'],
       rules: {
         'tsdoc/syntax': 'error',
@@ -34,8 +42,8 @@ module.exports = {
     },
     {
       files: [
-        '**/*.test.ts',
-        '**/*.test.tsx',
+        '*.test.ts',
+        '*.test.tsx',
         '**/testing/**/*.ts',
         '**/testing/**/*.tsx',
       ],
@@ -56,6 +64,10 @@ module.exports = {
         // Allow e.g. `/** @jest-environment jsdom */` directives
         'tsdoc/syntax': 'off',
       },
+    },
+    {
+      extends: ['plugin:yml/prettier'],
+      files: ['*.yaml', '*.yml'],
     },
   ],
   rules: {
