@@ -1,11 +1,21 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: [
-    'seek',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-  ],
+  extends: ['seek'],
   ignorePatterns: ['**/.eslintrc.js'],
   overrides: [
+    {
+      extends: [
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      ],
+      files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+      parserOptions: {
+        project: './tsconfig.json',
+      },
+      rules: {
+        '@typescript-eslint/consistent-type-exports': 'error',
+        '@typescript-eslint/no-floating-promises': 'error',
+      },
+    },
     {
       files: ['**/*.js', '**/*.jsx'],
       rules: {
@@ -17,6 +27,7 @@ module.exports = {
     },
     {
       files: ['**/*.ts', '**/*.tsx'],
+      plugins: ['eslint-plugin-tsdoc'],
       rules: {
         'tsdoc/syntax': 'error',
       },
@@ -47,14 +58,7 @@ module.exports = {
       },
     },
   ],
-  parserOptions: {
-    project: './tsconfig.json',
-  },
-  plugins: ['eslint-plugin-tsdoc'],
   rules: {
-    '@typescript-eslint/no-floating-promises': 'error',
-    '@typescript-eslint/consistent-type-exports': 'error',
-
     'import/no-duplicates': 'error',
     'import/order': [
       'error',
