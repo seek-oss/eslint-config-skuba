@@ -4,7 +4,7 @@ module.exports = {
   ignorePatterns: [
     '**/.eslintrc.js',
 
-    // Gantry resource files support non-standard template syntax
+    // Gantry resource files support non-standard syntax (Go templating)
     '/.gantry/**/*.yaml',
     '/.gantry/**/*.yml',
     'gantry*.yaml',
