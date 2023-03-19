@@ -9,8 +9,10 @@ module.exports = {
     '**/.eslintrc.js',
 
     // Gantry resource files support non-standard syntax (Go templating)
-    '/.gantry/**/*.{yaml,yml}',
-    'gantry*.{yaml,yml}',
+    '**/.gantry/**/*.yaml',
+    '**/.gantry/**/*.yml',
+    '**/gantry*.yaml',
+    '**/gantry*.yml',
   ],
   overrides: [
     {
