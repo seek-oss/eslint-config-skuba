@@ -1,3 +1,7 @@
+const jsExtensions = ['js', 'cjs', 'mjs', 'jsx'];
+const tsExtensions = ['ts', 'cts', 'mts', 'tsx'];
+const allExtensions = [...jsExtensions, ...tsExtensions];
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   extends: ['seek'],
@@ -5,17 +9,15 @@ module.exports = {
     '**/.eslintrc.js',
 
     // Gantry resource files support non-standard syntax (Go templating)
-    '/.gantry/**/*.yaml',
-    '/.gantry/**/*.yml',
-    'gantry*.yaml',
-    'gantry*.yml',
+    '/.gantry/**/*.{yaml,yml}',
+    'gantry*.{yaml,yml}',
   ],
   overrides: [
     {
       extends: [
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
-      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+      files: [`*.{${allExtensions.join(',')}}`],
       parserOptions: {
         project: './tsconfig.json',
       },
@@ -25,7 +27,7 @@ module.exports = {
       },
     },
     {
-      files: ['*.js', '*.jsx'],
+      files: [`*.{${jsExtensions.join(',')}}`],
       rules: {
         '@typescript-eslint/no-unsafe-argument': 'off',
         '@typescript-eslint/no-unsafe-assignment': 'off',
@@ -34,7 +36,7 @@ module.exports = {
       },
     },
     {
-      files: ['*.ts', '*.tsx'],
+      files: [`*.{${tsExtensions.join(',')}}`],
       plugins: ['eslint-plugin-tsdoc'],
       rules: {
         'tsdoc/syntax': 'error',
@@ -42,10 +44,8 @@ module.exports = {
     },
     {
       files: [
-        '*.test.ts',
-        '*.test.tsx',
-        '**/testing/**/*.ts',
-        '**/testing/**/*.tsx',
+        `*.test.{${tsExtensions.join(',')}}`,
+        `**/testing/**/*.{${tsExtensions.join(',')}}`,
       ],
       rules: {
         // Allow `any` in tests
@@ -67,7 +67,7 @@ module.exports = {
     },
     {
       extends: ['plugin:yml/prettier'],
-      files: ['*.yaml', '*.yml'],
+      files: ['*.{yaml,yml}'],
     },
   ],
   rules: {
