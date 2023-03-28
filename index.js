@@ -1,6 +1,5 @@
 const jsExtensions = ['js', 'cjs', 'mjs', 'jsx'];
 const tsExtensions = ['ts', 'cts', 'mts', 'tsx'];
-const allExtensions = [...jsExtensions, ...tsExtensions];
 
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
@@ -19,7 +18,7 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
-      files: [`*.{${allExtensions.join(',')}}`],
+      files: [`*.{${tsExtensions.join(',')}}`],
       parserOptions: {
         project: './tsconfig.json',
       },
