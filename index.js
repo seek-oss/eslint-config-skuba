@@ -3,7 +3,7 @@ const tsExtensions = ['ts', 'cts', 'mts', 'tsx'];
 
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ['seek'],
+  extends: ['seek/base'],
   ignorePatterns: [
     '**/.eslintrc.js',
 
