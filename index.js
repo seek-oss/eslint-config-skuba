@@ -20,7 +20,7 @@ module.exports = {
       ],
       files: [`*.{${tsExtensions.join(',')}}`],
       parserOptions: {
-        project: './tsconfig.json',
+        project: true,
       },
       rules: {
         '@typescript-eslint/consistent-type-exports': 'error',
