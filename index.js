@@ -1,5 +1,7 @@
-const jsExtensions = ['js', 'cjs', 'mjs', 'jsx'];
-const tsExtensions = ['ts', 'cts', 'mts', 'tsx'];
+/** @type {{ js: string[], ts: string[] }} */
+const extensions = require('eslint-config-seek/extensions');
+
+const { js, ts } = extensions;
 
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
@@ -18,7 +20,7 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
-      files: [`*.{${tsExtensions.join(',')}}`],
+      files: [`*.{${ts.join(',')}}`],
       parserOptions: {
         project: true,
       },
@@ -28,7 +30,7 @@ module.exports = {
       },
     },
     {
-      files: [`*.{${jsExtensions.join(',')}}`],
+      files: [`*.{${js.join(',')}}`],
       rules: {
         '@typescript-eslint/no-unsafe-argument': 'off',
         '@typescript-eslint/no-unsafe-assignment': 'off',
@@ -37,17 +39,14 @@ module.exports = {
       },
     },
     {
-      files: [`*.{${tsExtensions.join(',')}}`],
+      files: [`*.{${ts.join(',')}}`],
       plugins: ['eslint-plugin-tsdoc'],
       rules: {
         'tsdoc/syntax': 'error',
       },
     },
     {
-      files: [
-        `*.test.{${tsExtensions.join(',')}}`,
-        `**/testing/**/*.{${tsExtensions.join(',')}}`,
-      ],
+      files: [`*.test.{${ts.join(',')}}`, `**/testing/**/*.{${ts.join(',')}}`],
       rules: {
         // Allow `any` in tests
         '@typescript-eslint/no-unsafe-argument': 'off',
