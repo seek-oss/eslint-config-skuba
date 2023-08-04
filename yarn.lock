@@ -2965,10 +2965,10 @@ eslint-config-seek@^11.3.1:
     eslint-plugin-rulesdir "^0.2.2"
     find-root "^1.1.0"
 
-eslint-config-seek@^12.0.0:
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-seek/-/eslint-config-seek-12.0.0.tgz#ec56e577a32db60b3650de455e8a8d0179ea359f"
-  integrity sha512-W8IVyCuZC9RuXBtnCAuICpnYXLhLKBg8suXYfRfWX8SQzaStAdSluvttZdomNiD8WKBgMapUOoyDnuvJ+ojcyA==
+eslint-config-seek@^12.0.1:
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-seek/-/eslint-config-seek-12.0.1.tgz#2dcc97170064ff2dafe73d61066302ec98dc2b39"
+  integrity sha512-g3YWehspf8VjkiLp+TfQp6wH7NCqO/9YFrcQat6Gv24lzuITgbmtE4n4IaBPbxwl3RNoRkHaZueSYHlYDY+j7g==
   dependencies:
     "@babel/core" "^7.22.6"
     "@babel/eslint-parser" "^7.22.6"
