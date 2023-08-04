@@ -30,7 +30,9 @@ module.exports = {
         '@typescript-eslint/no-floating-promises': 'error',
         '@typescript-eslint/prefer-nullish-coalescing': [
           'error',
-          { ignorePrimitives: { string: true, boolean: true } },
+          {
+            ignorePrimitives: { string: true, boolean: true },
+          },
         ],
       },
     },
