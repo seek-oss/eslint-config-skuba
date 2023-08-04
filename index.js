@@ -28,6 +28,10 @@ module.exports = {
       rules: {
         '@typescript-eslint/consistent-type-exports': 'error',
         '@typescript-eslint/no-floating-promises': 'error',
+        '@typescript-eslint/prefer-nullish-coalescing': [
+          'error',
+          { ignorePrimitives: { string: true, boolean: true } },
+        ],
       },
     },
     {
