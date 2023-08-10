@@ -34,6 +34,8 @@ module.exports = {
             ignorePrimitives: { string: true, boolean: true },
           },
         ],
+        '@typescript-eslint/no-non-null-assertion': 'error',
+        '@typescript-eslint/non-nullable-type-assertion-style': 'off',
       },
     },
     {
