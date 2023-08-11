@@ -18,7 +18,8 @@ module.exports = {
   overrides: [
     {
       extends: [
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:@typescript-eslint/recommended-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
       ],
       files: [`*.{${ts.join(',')}}`],
       parserOptions: {
@@ -27,6 +28,16 @@ module.exports = {
       rules: {
         '@typescript-eslint/consistent-type-exports': 'error',
         '@typescript-eslint/no-floating-promises': 'error',
+        // allow || on strings and booleans
+        '@typescript-eslint/prefer-nullish-coalescing': [
+          'error',
+          {
+            ignorePrimitives: { string: true, boolean: true },
+          },
+        ],
+        // prefer type assertions over null assertions
+        '@typescript-eslint/no-non-null-assertion': 'error',
+        '@typescript-eslint/non-nullable-type-assertion-style': 'off',
       },
     },
     {
@@ -54,6 +65,7 @@ module.exports = {
         '@typescript-eslint/no-unsafe-call': 'off',
         '@typescript-eslint/no-unsafe-member-access': 'off',
         '@typescript-eslint/no-unsafe-return': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
 
         // Allow e.g. `expect(logger.child).toBeCalledWith()`
         '@typescript-eslint/unbound-method': 'off',
