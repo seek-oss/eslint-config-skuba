@@ -28,12 +28,14 @@ module.exports = {
       rules: {
         '@typescript-eslint/consistent-type-exports': 'error',
         '@typescript-eslint/no-floating-promises': 'error',
+        // allow || on strings and booleans
         '@typescript-eslint/prefer-nullish-coalescing': [
           'error',
           {
             ignorePrimitives: { string: true, boolean: true },
           },
         ],
+        // prefer type assertions over null assertions
         '@typescript-eslint/no-non-null-assertion': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'off',
       },
