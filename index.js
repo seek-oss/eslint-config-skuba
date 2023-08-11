@@ -67,6 +67,9 @@ module.exports = {
         '@typescript-eslint/no-unsafe-return': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
 
+        // Allow ! in tests
+        '@typescript-eslint/no-non-null-assertion': 'off',
+
         // Allow e.g. `expect(logger.child).toBeCalledWith()`
         '@typescript-eslint/unbound-method': 'off',
 
