@@ -40,7 +40,7 @@ module.exports = {
         '@typescript-eslint/non-nullable-type-assertion-style': 'off',
 
         // too spicy 🌶️
-        '@typescript-eslint/consistent-type-definitions': 'off'
+        '@typescript-eslint/consistent-type-definitions': 'off',
       },
     },
     {
