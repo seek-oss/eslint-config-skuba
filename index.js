@@ -38,6 +38,9 @@ module.exports = {
         // prefer type assertions over null assertions
         '@typescript-eslint/no-non-null-assertion': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+
+        // too spicy 🌶️
+        '@typescript-eslint/consistent-type-definitions': 'off'
       },
     },
     {
