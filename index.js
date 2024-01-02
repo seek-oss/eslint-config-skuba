@@ -81,6 +81,14 @@ module.exports = {
 
         // Allow e.g. `/** @jest-environment jsdom */` directives
         'tsdoc/syntax': 'off',
+
+        // Allow potential floating promises in tests only for Koa compatibility
+        // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-misused-promises.md#checksvoidreturn
+        // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/42551#issuecomment-648816869
+        '@typescript-eslint/no-misused-promises': [
+          'error',
+          { checksVoidReturn: false },
+        ],
       },
     },
     {
