@@ -47,6 +47,6 @@
     "entryPoint": "index.js",
     "template": "oss-npm-package",
     "type": "package",
-    "version": "3.7.3"
+    "version": "7.5.1"
   }
 }
