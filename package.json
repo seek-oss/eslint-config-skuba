@@ -21,9 +21,10 @@
     "index.js"
   ],
   "scripts": {
+    "changeset": "changeset",
     "format": "skuba format",
     "lint": "skuba lint",
-    "release": "skuba release"
+    "release": "changeset publish"
   },
   "dependencies": {
     "@types/eslint": "^8.4.1",
