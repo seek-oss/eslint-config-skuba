@@ -52,13 +52,13 @@ If you're on Windows, we recommend the [Windows Subsystem for Linux].
 
 First, some JavaScript tooling:
 
-- Node.js 12+
-- Yarn 1.x
+- Node.js
+- pnpm
 
 Next, install npm dependencies:
 
 ```shell
-yarn install
+pnpm install
 ```
 
 ### Git workflow
@@ -117,14 +117,14 @@ You can then copy those changes back into [index.js](/index.js).
 Format your code once you're happy with it:
 
 ```shell
-yarn format
+pnpm format
 ```
 
 We run linting in CI,
 but consider running this command locally for a faster feedback loop:
 
 ```shell
-yarn lint
+pnpm lint
 ```
 
 ## Releases

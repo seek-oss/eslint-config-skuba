@@ -14,44 +14,6 @@ Shareable ESLint config for **[skuba]**.
 - [Release](#release)
 - [Contributing](https://github.com/seek-oss/eslint-config-skuba/blob/master/CONTRIBUTING.md)
 
-## Usage
-
-**eslint-config-skuba** is bundled with **skuba**.
-
-You can start a new project:
-
-```shell
-npx skuba init
-```
-
-Or bootstrap an existing one:
-
-```shell
-# install skuba
-yarn add --dev --exact skuba
-
-# bootstrap your project
-yarn skuba configure
-```
-
-Either method will leave you with an `.eslintrc.js`:
-
-```typescript
-module.exports = {
-  extends: ['skuba'],
-};
-```
-
-Some scripts will be defined via `package.json`:
-
-```shell
-# run ESLint in fix mode
-yarn format
-
-# run ESLint in check mode
-yarn lint
-```
-
 ## Release
 
 This package is published to the public npm registry with a GitHub Actions [release workflow].
@@ -73,7 +35,7 @@ It depends on this repo being hosted on [seek-oss] with access to the `SEEK_OSS_
 ### Releasing latest
 
 Commits to the `master` branch will be released with the `latest` tag,
-which is the default used when running `npm install` or `yarn install`.
+which is the default used when running `pnpm install`.
 
 ### Releasing other dist-tags
 
